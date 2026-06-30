@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import RainbowKnot from "./RainbowKnot";
+import AsciiDonut from "./AsciiDonut";
 
 const SceneWrap = styled.div`
   margin: 1em 0 2em;
@@ -8,7 +8,7 @@ const SceneWrap = styled.div`
 
 const HeadScene = () => (
   <SceneWrap>
-    <RainbowKnot height={300} />
+    <AsciiDonut height={300} />
   </SceneWrap>
 );
 
