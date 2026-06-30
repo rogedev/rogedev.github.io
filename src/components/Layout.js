@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import styled, { ThemeProvider } from "styled-components";
 import { Link } from "gatsby";
 import { Helmet } from "react-helmet";
@@ -62,13 +62,10 @@ const getInitialTheme = () => {
 };
 
 const Layout = ({ children }) => {
-  const [themeName, setThemeName] = useState("light");
 
-  // Sync with the pre-hydration choice on mount (avoids SSR mismatch).
-  useEffect(() => {
-    setThemeName(getInitialTheme());
-  }, []);
 
+  const [themeName, setThemeName] = useState(getInitialTheme);
+    
   const toggleTheme = () => {
     setThemeName((prev) => {
       const next = prev === "dark" ? "light" : "dark";
