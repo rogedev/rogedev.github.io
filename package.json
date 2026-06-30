@@ -1,0 +1,48 @@
+{
+  "name": "rogedev-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal portfolio of Rogelio Rivas",
+  "license": "MIT",
+  "scripts": {
+    "dev": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "deploy": "gatsby clean && gatsby build && gh-pages -d public -b main",
+    "lint": "eslint \"src/**/*.{js,jsx}\" \"gatsby-*.{js,mjs}\"",
+    "lint:fix": "eslint --fix \"src/**/*.{js,jsx}\" \"gatsby-*.{js,mjs}\"",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "@mdx-js/react": "^2.3.0",
+    "gatsby": "^5.13.7",
+    "gatsby-plugin-mdx": "^5.13.1",
+    "gatsby-plugin-react-helmet": "^6.13.1",
+    "gatsby-plugin-styled-components": "^6.13.1",
+    "gatsby-remark-autolink-headers": "^6.13.1",
+    "gatsby-remark-prismjs": "^7.13.1",
+    "gatsby-source-filesystem": "^5.13.1",
+    "gatsby-transformer-remark": "^6.13.1",
+    "prismjs": "^1.29.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "styled-components": "^6.1.8",
+    "styled-normalize": "^8.1.1",
+    "three": "^0.160.0"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.23.10",
+    "babel-preset-gatsby": "^3.13.2",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.34.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "gh-pages": "^6.1.1",
+    "prettier": "^3.2.5"
+  }
+}
