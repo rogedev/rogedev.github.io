@@ -46,11 +46,6 @@ const ListElement = styled.li`
   }
 `;
 
-const ToggleElement = styled(ListElement)`
-  margin-left: auto;
-  margin-right: 0;
-`;
-
 const NavItem = styled(Link).attrs({ activeClassName })`
   color: ${(props) => props.theme.text};
   border: none;
@@ -73,7 +68,7 @@ const NavItem = styled(Link).attrs({ activeClassName })`
   }
 `;
 
-const Nav = ({ children }) => {
+const Nav = () => {
   return (
     <StyledNav>
       <StyledList>
@@ -92,7 +87,6 @@ const Nav = ({ children }) => {
             books
           </NavItem>
         </ListElement>
-        {children && <ToggleElement>{children}</ToggleElement>}
       </StyledList>
     </StyledNav>
   );

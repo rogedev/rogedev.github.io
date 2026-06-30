@@ -22,6 +22,13 @@ const Main = styled.main`
   }
 `;
 
+const TitleRow = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+`;
+
 const StyledTitle = styled.h1`
   margin: 0.3em 0;
 
@@ -105,12 +112,13 @@ const Layout = ({ children }) => {
         </Helmet>
 
         <header>
-          <StyledTitle>
-            <TitleLink to="/">Rogelio Rivas</TitleLink>
-          </StyledTitle>
-          <Nav>
+          <TitleRow>
+            <StyledTitle>
+              <TitleLink to="/">Rogelio Rivas</TitleLink>
+            </StyledTitle>
             <ThemeToggle theme={themeName} toggleTheme={toggleTheme} />
-          </Nav>
+          </TitleRow>
+          <Nav />
         </header>
 
         {children}
