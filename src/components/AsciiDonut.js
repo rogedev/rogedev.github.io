@@ -105,8 +105,8 @@ const AsciiDonut = ({ height = 320 }) => {
       }
       pre.textContent = frame;
 
-      A += 0.02;
-      B += 0.01;
+      A += 0.01;
+      B += 0.005;
       frameId = window.requestAnimationFrame(render);
     };
 
