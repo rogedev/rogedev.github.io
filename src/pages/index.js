@@ -20,7 +20,7 @@ const IndexPage = () => (
       <p>Hi, I am Rogelio. I build production backend systems end-to-end.</p>
       <p>
         I'm a Backend Engineer specializing in AWS serverless architecture and
-        distributed systems, with 4+ years of experience and a strong focus on
+        distributed systems, with 5+ years of experience and a strong focus on
         system design, scalability, and performance optimization — including
         infrastructure design and CI/CD pipelines.
       </p>
@@ -33,7 +33,7 @@ const IndexPage = () => (
         >
           PideDirecto (YC S21)
         </a>
-        , building serverless backend platforms on AWS.
+        , building serverless backend applications on AWS.
       </p>
       <p>
         You can find me on{" "}
